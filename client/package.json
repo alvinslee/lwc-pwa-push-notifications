@@ -1,0 +1,38 @@
+{
+    "name": "client",
+    "description": "My amazing LWC app",
+    "version": "0.0.1",
+    "author": "Alvin Lee",
+    "bugs": "https://github.com/alvinslee/lwc-pwa-push-notifications/issues",
+    "dependencies": {
+        "@salesforce-ux/design-system": "^2.13.7",
+        "compression": "^1.7.4",
+        "express": "^4.17.1",
+        "helmet": "^4.2.0",
+        "node-fetch": "^2.6.1",
+        "nodemon": "^2.0.6"
+    },
+    "devDependencies": {
+        "eslint": "^7.13.0",
+        "lint-staged": "^10.5.1",
+        "lwc-services": "^2.2.3"
+    },
+    "engines": {
+        "node": ">=10.13.0",
+        "npm": ">=6.4.1",
+        "yarn": ">=1.9.4"
+    },
+    "homepage": "https://github.com/alvinslee/lwc-pwa-push-notifications",
+    "keywords": [
+        "lwc"
+    ],
+    "license": "MIT",
+    "repository": "Alvin Lee/client",
+    "scripts": {
+        "build": "lwc-services build -m production -w scripts/webpack.config.js",
+        "build:development": "lwc-services build -w scripts/webpack.config.js",
+        "lint": "eslint ./src/**/*.js",
+        "serve": "node scripts/server.js",
+        "watch": "nodemon -e js,html,css --watch src --exec \"yarn build && yarn serve\""
+    }
+}

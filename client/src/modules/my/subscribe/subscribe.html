@@ -1,0 +1,6 @@
+<template>
+  <div>
+    <button if:true={isSubscribed} onclick={handleClick} class="slds-button slds-button_destructive" href="javascript:void(0)">Stop Receiving Push Notifications</button>
+    <button if:false={isSubscribed} onclick={handleClick} class="slds-button slds-button_success" href="javascript:void(0)">Begin Receiving Push Notifications</button>
+  </div>
+</template>

@@ -1,0 +1,9 @@
+my-notification-type, my-notification-duration {
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+my-notification-type legend,
+my-notificatoin-duration legend {
+  margin-bottom: 12p;
+}

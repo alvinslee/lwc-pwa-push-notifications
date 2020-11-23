@@ -1,0 +1,30 @@
+<template>
+  <article class="slds-card">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <span class="slds-icon_container slds-icon-utility-clock" title="notification duration">
+            <svg class="slds-icon slds-icon_small slds-icon-text-default" aria-hidden="true">
+              <use xlink:href="/resources/SLDS/assets/icons/utility-sprite/svg/symbols.svg#clock"></use>
+            </svg>
+            <span class="slds-assistive-text">notification duration</span>
+          </span>
+        </div>
+        <div class="slds-media__body">
+          <h2 class="slds-card__header-title slds-text-heading_medium">
+            <strong>How often would you like to receive a push notification?</strong>
+          </h2>
+        </div>
+      </header>
+    </div>
+    <div class="slds-card__body slds-card__body_inner">
+      <fieldset class="slds-form-element">
+        <div class="slds-form-element__control">
+          <my-radio-option data-value="30" name="notificationDuration" value="30" label="Every 30 seconds" id="duration-30" onradiochecked={radioCheckedHandler}></my-radio-option>
+          <my-radio-option data-value="60" name="notificationDuration" value="60" label="Every 60 seconds" id="duration-60" onradiochecked={radioCheckedHandler}></my-radio-option>
+          <my-radio-option data-value="180" name="notificationDuration" value="180" label="Every 180 seconds" id="duration-180" onradiochecked={radioCheckedHandler}></my-radio-option>
+        </div>
+      </fieldset>
+    </div>
+  </article>
+</template>

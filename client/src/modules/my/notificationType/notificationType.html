@@ -1,0 +1,30 @@
+<template>
+  <article class="slds-card">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <span class="slds-icon_container slds-icon-utility-announcement" title="notification type">
+            <svg class="slds-icon slds-icon_small slds-icon-text-default" aria-hidden="true">
+              <use xlink:href="/resources/SLDS/assets/icons/utility-sprite/svg/symbols.svg#announcement"></use>
+            </svg>
+            <span class="slds-assistive-text">notification type</span>
+          </span>
+        </div>
+        <div class="slds-media__body">
+          <h2 class="slds-card__header-title slds-text-heading_medium">
+            <strong>What kind of push notification would you like to receive?</strong>
+          </h2>
+        </div>
+      </header>
+    </div>
+    <div class="slds-card__body slds-card__body_inner">
+      <fieldset class="slds-form-element">
+        <div class="slds-form-element__control">
+          <my-radio-option data-value="iss" name="notificationType" value="iss" label="International Space Station geolocation" id="type-iss" onradiochecked={radioCheckedHandler}></my-radio-option>
+          <my-radio-option data-value="quote" name="notificationType" value="quote" label="Random software development quote" id="type-quote" onradiochecked={radioCheckedHandler}></my-radio-option>
+          <my-radio-option data-value="activity" name="notificationType" value="activity" label="Activity suggestion if you're bored" id="type-activity" onradiochecked={radioCheckedHandler}></my-radio-option>
+        </div>
+      </fieldset>
+    </div>
+  </article>
+</template>

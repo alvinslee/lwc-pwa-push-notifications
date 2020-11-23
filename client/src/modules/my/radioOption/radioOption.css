@@ -1,0 +1,11 @@
+span.slds-radio {
+  display: block;
+}
+
+input[type="radio"], label {
+  cursor: pointer;
+}
+
+label[disabled] {
+  opacity: 0.3;
+}
